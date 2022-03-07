@@ -2,20 +2,21 @@
 <html lang="en">
 
 <head>
-    <title> คำสั่งแต่งตั้ง</title>
+    <title style="color:blue;"> คำสั่งแต่งตั้ง </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <body style="background-color:powderblue;">
 </head>
 
 <body>
     <div class="container">
-        <h1>คำสั่งแต่งตั้ง | <a href='newdocument.php'><span class='glyphicon glyphicon-pencil'></span></a></h1>
-        <form action="#" method="post">
+        <h1><center>คำสั่งแต่งตั้ง | <a href='newdocument.php'><span class='glyphicon glyphicon-pencil'></center></span></a></h1>
+        <form action="#" method="post"><center>
             <input type="text" name="kw" placeholder="Enter document name" value="">
-            <input type="submit">
+            <input type="submit"></center>
         </form>
 
         <?php
@@ -34,10 +35,10 @@
         $result = $stmt->get_result();
         
         if ($result->num_rows == 0) {
-            echo "Not found!";
+            echo "<center> Not found! </center>";
         } else {
             echo "Found " . $result->num_rows . " record(s).";
-            // สร้างตัวแปรเพื่อเก็บข้อความ html 
+
             $table = "<table class='table table-hover'>
                         <thead>
                             <tr>
@@ -54,10 +55,10 @@
                         </thead>
                         <tbody>";
                         
-            // 
+            
             $i = 1; 
 
-            // ดึงข้อมูลออกมาทีละแถว และกำหนดให้ตัวแปร row 
+            
             while($row = $result->fetch_object()){ 
                 $table.= "<tr>";
                 $table.= "<td>" . $i++ . "</td>";

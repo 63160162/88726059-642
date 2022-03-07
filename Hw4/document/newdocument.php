@@ -26,6 +26,10 @@ if ($_POST){
 <html lang="en">
 
 <head>
+    <body style="background-color:powderblue;">
+</head>
+
+<head>
     <title>เพิ่มคำสั่งแต่งตั้ง</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
