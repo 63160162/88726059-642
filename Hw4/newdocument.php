@@ -53,6 +53,7 @@ if ($_POST){
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <body style="background-color:powderblue;">
 </head>
 
 <body>
@@ -79,7 +80,7 @@ if ($_POST){
                 <label for="doc_status">สถานะ</label>
                 <input type="radio"  name="doc_status" id="doc_status" value="Active"> Active
                 <br>&emsp;&emsp;&nbsp;&nbsp;
-                <input type="radio"  name="doc_status" id="doc_status" value="Expire"> Expire
+                <input type="radio"  name="doc_status" id="doc_status" value="Expired"> Expired
             </div>
             <div class="form-group">
                 <label for="doc_file_name">ชื่อไฟล์เอกสาร</label>

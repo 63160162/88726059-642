@@ -58,6 +58,7 @@ if ($_POST){
     <div class="checkbox">
         <label><input type="checkbox" name="staff_id[]" <?php if ($row->doc_id <> null) echo "checked";?>
                 value="<?php echo $row->id; ?>"><?php echo $row->stf_name; ?></label>
+                <body style="background-color:powderblue;">
     </div>
     <?php } ?>
     <input type="submit">

@@ -45,6 +45,7 @@ if ($_POST){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <body style="background-color:powderblue;">
 </head>
 
 <body>
@@ -71,7 +72,7 @@ if ($_POST){
                 <label for="doc_status">สถานะ</label>
                 <input type="radio"  name="doc_status" id="doc_status" value="Active"> Active
                 <br>&emsp;&emsp;&emsp;
-                <input type="radio"  name="doc_status" id="doc_status" value="Expire"> Expire
+                <input type="radio"  name="doc_status" id="doc_status" value="Expired"> Expired
             </div>
             <div class="form-group">
                 <label for="doc_file_name">ชื่อไฟล์เอกสาร</label>
